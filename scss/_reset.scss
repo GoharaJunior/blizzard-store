@@ -24,12 +24,12 @@ body {
     overflow-x: hidden;
 }
 
-body {
-    background-color: $neutral-100;
+button {
+    cursor: pointer;
+    background-color: transparent;
 }
 
-button {
-    background-color: transparent;
-    cursor: pointer;
+body {
+    background-color: $neutral-100;
 }
 
