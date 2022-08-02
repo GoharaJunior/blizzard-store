@@ -17,8 +17,7 @@ var slide_hero = new Swiper(".slide-principal", {
     }
 });
 
-
-// tabs
+// Tabs
 const allFilters = document.querySelectorAll('.js-nav-games li a');
 const tabPane = document.querySelectorAll('.tab-pane-games');
 
@@ -37,4 +36,28 @@ allFilters.forEach((filter, index) => {
         tabPane[index].classList.add('active');
         filter.classList.add('active');
     })
+})
+
+// Modal
+const btnOpenModal = document.querySelector('.js-open-modal');
+const btnCloseModal = document.querySelector('.js-close');
+const btnCloseOverlay = document.querySelector('.js-overlay');
+
+btnOpenModal.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    let tagHtml = document.documentElement;
+    tagHtml.classList.add('show-modal');
+})
+
+btnCloseModal.addEventListener('click', () => {
+    let tagHtml = document.documentElement;
+
+    tagHtml.classList.remove('show-modal');
+})
+
+btnCloseOverlay.addEventListener('click', () => {
+    let tagHtml = document.documentElement;
+
+    tagHtml.classList.remove('show-modal');
 })
