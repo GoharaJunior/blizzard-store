@@ -4,8 +4,8 @@
         <img src=".github/github-readme-title.png" alt="Logo King Host">
     <br>
 </h1>
-<p align="center"> Visualize o projeto:
-    BREVE
+<p align="center"> 👀 Visualize o projeto:
+    https://blizzard-store.netlify.app/
 </p>
 
 <img src=".github/demo-desktop.gif" alt="Demonstração do Projeto" height="430">&nbsp;&nbsp;
