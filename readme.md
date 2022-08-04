@@ -8,7 +8,7 @@
     https://blizzard-store.netlify.app/
 </p>
 
-<img src=".github/demo-desktop.gif" alt="Demonstração do Projeto" height="430">&nbsp;&nbsp;
+<img src=".github/demo-desktop.gif" alt="Demonstração do Projeto" height="400">&nbsp;&nbsp;
 <img src=".github/demo-mobile.gif" alt="Demonstração do Projeto" height="350">
 <br>
 <br>
