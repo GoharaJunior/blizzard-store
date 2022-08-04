@@ -1,18 +1,23 @@
-<!--
+
 <h1 align="center">
     <br>
-        <img src=".github/maeztra-title.png" alt="Logo King Host">
+        <img src=".github/github-readme-title.png" alt="Logo King Host">
     <br>
 </h1>
 <p align="center"> Visualize o projeto:
-    https://goharajunior.github.io/maeztra-store/
+    BREVE
 </p>
 
-<img src=".github/demo.gif" alt="Demonstração do Projeto" height="350">&nbsp;&nbsp;
+<img src=".github/demo-desktop.gif" alt="Demonstração do Projeto" height="400">&nbsp;&nbsp;
 <img src=".github/demo-mobile.gif" alt="Demonstração do Projeto" height="350">
 <br>
 <br>
 
+## 🔧 Melhorias futuras
+### 📱 Responsive
+- [ ] Fazer o menu na versão mobile.
+- [ ] Deixar Newsletter de entrada responsivo.
+---
 ## ⚡ Tecnologias
 
 <img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat">&nbsp;
@@ -51,4 +56,3 @@ gulp
     <a href="#top">VOLTE PARA O TOPO 🔝</a>
 </b></kbd></p> 
 
--->
