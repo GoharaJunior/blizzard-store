@@ -12,59 +12,91 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .left-container {
-            display: flex;
-            align-items: center;
-            .logo {
-                position: relative;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: -2.9rem;
-                    width: 4.3rem;
-                    height: 0.2rem;
-                    background-color: $primary-default;
-                }
+    }
+    .left-container {
+        display: flex;
+        align-items: center;
+        .logo {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2.9rem;
+                width: 4.3rem;
+                height: 0.2rem;
+                background-color: $primary-default;
             }
-            nav {
-                margin-left: 12.2rem;
-                ul {
-                    display: flex;
-                    align-items: center;
-                    li {
-                        &:not(:last-child) {
-                            margin-right: 3.4rem;
+        }
+        nav {
+            margin-left: 12.2rem;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    &:not(:last-child) {
+                        margin-right: 3.4rem;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 2.1rem;
+                        color: #FFFFFF;
+                        img {
+                            margin-left: 1.4rem;
+                            transition: transform .3s;
                         }
-                        a {
-                            display: flex;
-                            align-items: center;
-                            font-weight: 500;
-                            font-size: 1.4rem;
-                            line-height: 2.1rem;
-                            color: #FFFFFF;
+                        &.active {
+                            color: $primary-default;
                             img {
-                                margin-left: 1.4rem;
-                                transition: transform .3s;
-                            }
-                            &.active {
-                                color: $primary-default;
-                                img {
-                                    transform: rotate(180deg);
-                                }
+                                transform: rotate(180deg);
                             }
                         }
                     }
                 }
             }
         }
+    }
+    .right-container {
+        display: flex;
+        align-items: center;
+        .btn {
+            &:not(:first-child) {
+                margin-left: 1.6rem;
+            }
+        }
+        .btn-mobile {
+            display: none;
+        }
+    }
+
+    @include responsive(991px) {
+        .left-container {
+            nav {
+                display: none;
+            }
+        }
+
         .right-container {
-            display: flex;
-            align-items: center;
+            .btn-mobile {
+                display: block;
+                margin-left: 8.9rem;
+            }
+        }
+    }
+
+    @include responsive(560px) {
+        height: 8rem;
+        .left-container {
+            .logo {
+                max-width: 6.9rem;
+            }
+        }
+        .right-container {
             .btn {
-                &:not(:first-child) {
-                    margin-left: 1.6rem;
-                }
+                display: none;
             }
         }
     }
@@ -169,5 +201,9 @@ header {
                 }
             }
         }
+    }
+
+    @include responsive(560px) {
+        display: none;
     }
 }
