@@ -13,6 +13,9 @@ var slide_thumbnail = new Swiper(".slide-thumbnail", {
     }
 });
 
+// progress bar
+const progressSlide = document.querySelector('.js-progress');
+
 var slide_hero = new Swiper(".slide-principal", {
     effect: 'fade',
     loop: true,
@@ -20,8 +23,24 @@ var slide_hero = new Swiper(".slide-principal", {
         swiper: slide_thumbnail,
     },
     autoplay: {
-        delay: 4000,
+        delay: 5000,
         disableOnInteraction: false
+    },
+    on: {
+        init: function() {
+            progressSlide.classList.remove('animate');
+            progressSlide.classList.remove('active');
+            progressSlide.classList.add('animate');
+            progressSlide.classList.add('active');
+        },
+        slideChangeTransitionStart: function() {
+            progressSlide.classList.remove('animate');
+            progressSlide.classList.remove('active');
+            progressSlide.classList.add('active');
+        },
+        slideChangeTransitionEnd: function() {
+            progressSlide.classList.add('animate');
+        },
     }
 });
 
